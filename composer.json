@@ -1,13 +1,23 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "fxio/laravel-tabler-starter",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Laravel starter template with Tabler admin/user dashboards and authentication system",
     "keywords": [
         "laravel",
-        "framework"
+        "tabler",
+        "admin",
+        "dashboard",
+        "starter-kit",
+        "auth"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Ehsan Razavi",
+            "email": "forexstocker@gmail.com"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.31",
