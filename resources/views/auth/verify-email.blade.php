@@ -1,4 +1,9 @@
-<x-guest-layout>
+@extends('layouts.auth.app')
+
+@section('main')
+
+@endsection
+
     <div class="card card-md">
         <div class="card-body">
             <h2 class="h2 text-center mb-4">Verify your email</h2>

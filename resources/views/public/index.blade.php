@@ -1,20 +1,4 @@
 <x-public-layout>
-
-    <x-slot name="header">
-    <div class="container-xl">
-        <div class="row g-2 align-items-center">
-            <div class="col">
-                <div class="page-pretitle">
-                    Welcome to
-                </div>
-                <h2 class="page-title">
-                    Laravel Tabler Starter
-                </h2>
-            </div>
-        </div>
-    </div>
-    </x-slot>
-
     <div class="row row-deck row-cards">
         <div class="col-12">
             <div class="card card-md">
@@ -61,7 +45,6 @@ npm run dev</code></pre>
                 </div>
             </div>
         </div>
-
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
@@ -84,5 +67,4 @@ npm run dev</code></pre>
             </div>
         </div>
     </div>
-
 </x-public-layout>

@@ -1,4 +1,12 @@
-<x-guest-layout>
+@extends('layouts.auth.app')
+
+@section('main')
+    <div class="text-center">
+        <a href="{{ route('index') }}">
+            <h1>{{ config('app.name') }}</h1>
+        </a>
+    </div>
+
     <div class="card card-md">
         <div class="card-body">
             <h2 class="h2 text-center mb-4">Login to your account</h2>
@@ -44,4 +52,5 @@
     <div class="text-center text-muted mt-3">
         Don't have account yet? <a href="{{ route('register') }}" tabindex="-1">Sign up</a>
     </div>
-</x-guest-layout>
+@endsection
+

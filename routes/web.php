@@ -7,15 +7,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(PublicController::class)->group(function () {
     Route::get('/','index')->name('index');
-    Route::get('faq','faq')->name('faq');
-    Route::get('/blog', 'blog')->name('blog'); // Show all blog posts
-    Route::get('/blog/{blog}', 'blogShow')->name('blogShow'); // Single blog post by slug
-    Route::get('/blog/category/{category}', 'blogByCategory')->name('blogByCategory'); // Posts by category
 });
 
 // Admin routes
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/', [DashboardControllerA::class, 'index'])->name('index');
+    Route::get('users', [DashboardControllerA::class, 'users'])->name('users');
 });
 
 // User routes

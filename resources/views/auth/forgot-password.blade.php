@@ -1,4 +1,6 @@
-<x-guest-layout>
+@extends('layouts.auth.app')
+
+@section('main')
     <div class="card card-md">
         <div class="card-body">
             <h2 class="h2 text-center mb-4">Forgot password</h2>
@@ -31,4 +33,4 @@
     <div class="text-center text-muted mt-3">
         Forget it, <a href="{{ route('login') }}">send me back</a> to the sign in screen.
     </div>
-</x-guest-layout>
+@endsection

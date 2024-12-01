@@ -1,17 +1,24 @@
-<x-user-layout>
+@extends('layouts.user.app')
 
-    <x-slot name="header">
-    <div class="container-xl">
-        <div class="row g-2 align-items-center">
-            <div class="col">
-                <h2 class="page-title">
-                    Dashboard
-                </h2>
+@section('header')
+    <div class="page-header d-print-none">
+        <div class="container-xl">
+            <div class="row g-2 align-items-center">
+                <div class="col">
+                    <!-- Page pre-title -->
+                    <div class="page-pretitle">
+                        Overview
+                    </div>
+                    <h2 class="page-title">
+                        User Dashboard
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
-    </x-slot>
+@endsection
 
+@section('main')
     <div class="row row-deck row-cards">
         <div class="col-md-6">
             <div class="card">
@@ -41,8 +48,11 @@
 
         <div class="col-md-6">
             <div class="card">
-                <div class="card-body">
+                <div class="card-header">
                     <h3 class="card-title">Quick Actions</h3>
+                </div>
+
+                <div class="card-body p-0">
                     <div class="list-group list-group-flush">
                         <a href="#" class="list-group-item list-group-item-action">Update Profile</a>
                         <a href="#" class="list-group-item list-group-item-action">Change Password</a>
@@ -52,4 +62,5 @@
             </div>
         </div>
     </div>
-</x-user-layout>
+@endsection
+
