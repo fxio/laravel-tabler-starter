@@ -73,3 +73,29 @@ npm run build
 
 # Start the local development server
 php artisan serve
+
+
+🔒 Default Credentials
+Admin:
+
+Email: admin@example.com
+Password: password
+
+User:
+
+Email: user@example.com
+Password: password
+
+🛠 Configuration
+
+Configure your environment variables in .env:
+
+APP_NAME="Your App Name"
+APP_URL=http://localhost:8000
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
