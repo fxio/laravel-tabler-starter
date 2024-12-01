@@ -1,28 +1,75 @@
 # Laravel Tabler Starter
 
-A professional Laravel starter template with:
-- Separate admin and user dashboards using Tabler theme
-- Multi-authentication system (Admin & User)
-- Common admin features pre-built
-- Modern asset compilation with Vite
-- Comprehensive documentation
+<p align="center">
+<a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a>
+</p>
 
-## Status: 🚧 Under Development
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-This package is currently in active development. Features and documentation will be added progressively.
+A professional Laravel starter template with separate admin and user dashboards using the Tabler UI kit. Perfect for quickly bootstrapping Laravel applications with a beautiful admin interface.
 
-## Planned Features
+## 🚀 Features
 
-- [ ] Multi-authentication (Admin/User)
-- [ ] Tabler theme integration
-- [ ] Admin dashboard
-  - [ ] User management
-  - [ ] Role & permission management
-  - [ ] Admin profile management
-- [ ] User dashboard
-  - [ ] User profile
-  - [ ] Account settings
-- [ ] Email verification
-- [ ] Password reset
-- [ ] Remember me functionality
-- [ ] Activity logging
+- **Multi-Authentication System**
+  - Separate admin and user areas
+  - Role-based access control
+  - Secure authentication flows
+
+- **Admin Dashboard**
+  - User Management
+  - Role & Permission Management
+  - Admin Profile Management
+  - Activity Logging
+  - Real-time Notifications
+
+- **User Dashboard**
+  - User Profile
+  - Account Settings
+  - Email Verification
+  - Password Management
+
+- **Modern Tech Stack**
+  - Laravel 10
+  - Tabler UI Kit
+  - Vite
+  - MySQL
+
+## 📋 Requirements
+
+- PHP >= 8.2
+- Composer
+- Node.js & NPM
+- MySQL
+
+## ⚡ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/fxio/laravel-tabler-starter.git
+
+# Navigate to the directory
+cd laravel-tabler-starter
+
+# Install PHP dependencies
+composer install
+
+# Install NPM dependencies
+npm install
+
+# Create environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Configure your database in .env and run migrations with seeders
+php artisan migrate --seed
+
+# Build assets
+npm run build
+
+# Start the local development server
+php artisan serve
