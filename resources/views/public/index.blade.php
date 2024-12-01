@@ -1,4 +1,6 @@
-<x-public-layout>
+@extends('layouts.public.app')
+
+@section('main')
     <div class="row row-deck row-cards">
         <div class="col-12">
             <div class="card card-md">
@@ -67,4 +69,4 @@ npm run dev</code></pre>
             </div>
         </div>
     </div>
-</x-public-layout>
+@endsection

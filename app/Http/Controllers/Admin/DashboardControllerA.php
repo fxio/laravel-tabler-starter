@@ -17,7 +17,7 @@ class DashboardControllerA extends Controller
 
     public function index(): View
     {
-        return view('admin.index', [
+        return view('admin.dashboard.index', [
             'totalAdmins' => $this->stats->getTotalAdmins(),
             'totalUsers' => $this->stats->getTotalUsers(),
             'activeUsers' => $this->stats->getActiveUsers(),
